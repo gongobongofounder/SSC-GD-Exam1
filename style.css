@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cutive+Mono&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Sixtyfour+Convergence&display=swap');
+
+/* General body styling */
+body {
+    margin: 30px;
+    margin-top: 10px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 20px;
+}
+
+.timer {
+    font-size: 20px;
+    color: #FF6347;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.head-footer {
+    display: flex;
+    gap: 32px;
+
+}
+
+.span1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.span2 {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Main container styling */
+.container {
+    margin-top: 120px;
+    display: grid;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 90%; */
+    max-width: 600px;
+    padding: 20px;
+    gap: 40px;
+}
+
+
+/* Quiz container styling */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Question container styling */
+.question-cont {
+    display: grid;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    /* width: 95%; */
+    /* text-align: center; */
+    scroll-margin-top: 120px;
+}
+
+/* Option container styling */
+.option-cont {
+    background-color: rgb(188, 242, 243);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit {
+    background-color: white;
+    /* Change background to white */
+    color: black;
+    /* Change text color to black */
+
+    border: 2px solid black;
+    /* Remove border */
+    /* width: fit-content; */
+
+    padding: 5px 12px;
+    /* Padding inside the button */
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Make it an inline element */
+    font-size: 30px;
+    /* Set font size */
+    margin: 10px 2px;
+    /* Add some margin */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border-radius: 12px;
+    /* Rounded corners */
+    transition-duration: 0.4s;
+    /* Animation time */
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 100,
+        "EHLT" 12;
+}
+
+/* Hover effect */
+#submit:hover {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: 2px solid #4CAF50;
+    /* Add green border */
+}
+
+#result {
+    background-color: rgb(241, 248, 179);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.subject-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    border: 2px solid green;
+    border-radius: 20px 50px 20px 50px;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    /* transform: translateX(-50%); */
+
+}
+
+i {
+    font-size: 18px;
+}
+
+img {
+    mix-blend-mode: multiply;
+}
+
+.question-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 380px;
+    width: 25%;
+    position: fixed;
+    /* Fixes the div to the viewport */
+    top: 150px;
+    /* Distance from the top */
+    left: 30px;
+    /* Distance from the right */
+    /* Set width */
+    background-color: #f9f9f9;
+    /* Light background for visibility */
+    border: 1px solid #ccc;
+    /* Optional border */
+    border-radius: 10px;
+    /* Rounded corners for a window-like effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow */
+    padding: 10px;
+    /* Padding inside the div */
+    z-index: 1000;
+    /* Ensures it stays above other elements */
+}
+
+
+.question-panel h1 {
+    margin: 0;
+    /* Remove default margin for cleaner look */
+    font-size: 1.2rem;
+}
+
+.question-button {
+    padding: 12px 24px;
+    /* Slightly larger for better touch targets */
+    border: 1px solid #b292d3;
+    /* Subtle border matching the theme */
+    border-radius: 50px;
+    /* Retain rounded look but make it sleeker */
+    background-color: #b292d3;
+    /* Refined shade for a professional look */
+    color: #fff;
+    /* White text for contrast */
+    font-size: 16px;
+    /* Professional, readable font size */
+    font-weight: 500;
+    /* Moderate boldness */
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adds depth */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.question-button:hover {
+    background-color: #9f78c4;
+    /* Slightly darker for hover effect */
+    border-color: #9f78c4;
+    /* Match hover background */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+.question-button:active {
+    background-color: #8a5fb0;
+    /* Darker shade for active state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow change */
+    transform: scale(0.98);
+    /* Slight scale-down effect */
+}
+
+
+.question-cont.active {
+    /* background-color: #f0f0f0; */
+    /* Light highlight for active question */
+    border: 4px solid #e7ea0b;
+    /* Optional border for the active question */
+}
+
+/* .question-button.active {
+    border: 2px solid red;
+    color: white;
+} */
+
+.review-btn-cont {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 69px; */
+}
+
+
+
+.review-btn {
+    background-color: #5fa0e5;
+    /* Professional blue */
+    color: #ffffff;
+    /* White text for contrast */
+    border: none;
+    /* Remove default border */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Adequate padding for better UX */
+    font-size: 16px;
+    /* Professional font size */
+    font-weight: 600;
+    /* Slightly bold for emphasis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.review-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue for hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* More depth on hover */
+}
+
+.review-btn:active {
+    background-color: #004494;
+    /* Even darker blue when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow change */
+    transform: scale(0.98);
+    /* Slight scale-down effect */
+}
+
+
+.buttonLayout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Space between buttons */
+    width: 350px;
+    height: 300px;
+    overflow-y: auto;
+    /* Smooth vertical scrolling */
+    border: 2px solid #00b894;
+    /* Professional green shade */
+    border-radius: 15px;
+    /* Smooth edges */
+    padding: 10px;
+    background-color: #f8f9fa;
+    /* Light gray background for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    scrollbar-width: thin;
+    /* Slim scrollbars */
+    scrollbar-color: #00b894 #f8f9fa;
+    /* Stylish scrollbar colors */
+}
+
+/* Style for individual buttons */
+.buttonLayout .question-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* Circular buttons */
+    background-color: #6c63ff;
+    /* Eye-catching purple shade */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+}
+
+/* Hover effect for buttons */
+.buttonLayout .question-button:hover {
+    background-color: #4a47d3;
+    /* Darker purple on hover */
+    transform: scale(1.1);
+    /* Slight enlargement for emphasis */
+}
+
+/* Active state styling */
+.buttonLayout .question-button.active {
+    background-color: #00b894;
+    /* Green for active questions */
+    border: 2px solid red;
+}
+
+/* Answered state */
+.buttonLayout .question-button.answered {
+    background-color: #4caf53;
+    /* Change to green to show it's answered */
+    color: white;
+    /* Text color for contrast */
+    /* Green for answered questions */
+}
+
+/* Review state */
+.buttonLayout .question-button.review-active {
+    background-color: rgb(232, 143, 10);
+    color: #fff;
+    /* Orange for review */
+}
+
+/* Answered and reviewed state */
+.buttonLayout .question-button.answered-and-reviewed {
+    background-color: #a30bea;
+    /* Reddish shade for answered & reviewed */
+}
+
+/* Customize the scrollbar for a modern look */
+.buttonLayout::-webkit-scrollbar {
+    width: 8px;
+}
+
+.buttonLayout::-webkit-scrollbar-thumb {
+    background-color: #00b894;
+    /* Green thumb */
+    border-radius: 10px;
+}
+
+.buttonLayout::-webkit-scrollbar-track {
+    background-color: #f8f9fa;
+    /* Match background */
+}
+
+.instruction2 {
+    font-size: 16px;
+    /* Readable font size */
+    font-family: 'Arial', sans-serif;
+    /* Professional font */
+    color: #333333;
+    /* Neutral dark gray text for readability */
+    background-color: #f1f8ff;
+    /* Light blue background for contrast */
+    border: 1px solid #00b894;
+    /* Match the green from the button layout */
+    border-radius: 8px;
+    /* Slightly rounded corners for a polished look */
+    padding: 10px;
+    /* Comfortable spacing inside the box */
+    margin-bottom: 5px;
+    /* Add spacing from elements below */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: left;
+    /* Left-align text for a clean layout */
+    line-height: 1.5;
+    /* Improve text readability */
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* height: 75%px; */
+    width: 25%;
+    position: fixed;
+    /* Fixes the div to the viewport */
+    top: 150px;
+    /* Distance from the top */
+    right: 20px;
+    /* Distance from the right */
+    /* Set width */
+    background-color: #f9f9f9;
+    /* Light background for visibility */
+    border: 1px solid #ccc;
+    /* Optional border */
+    border-radius: 10px;
+    /* Rounded corners for a window-like effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow */
+    padding: 10px;
+    /* Padding inside the div */
+    z-index: 1000;
+    /* Ensures it stays above other elements */
+}
+
+/* Add hover effect for interactivity (optional) */
+.instruction2:hover {
+    background-color: #e8f5e9;
+    /* Light green on hover */
+    border-color: #27ae60;
+    /* Match hover color to the buttons */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth hover effect */
+}
+
+
+.instruction2 strong {
+    color: #2d3436;
+    /* Slightly darker for emphasis */
+}
+
+.instruction2 ul {
+    list-style-type: disc;
+    /* Standard bullet points */
+    margin-left: 20px;
+    /* Indent the list */
+    margin-bottom: 15px;
+    /* Space below the list */
+}
+
+.instruction2 hr {
+    border: none;
+    border-top: 1px solid #dfe6e9;
+    /* Light line separator */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+.color-code {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Space between items */
+    margin-top: 10px;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    /* Align text and color box vertically */
+    gap: 10px;
+    /* Space between color box and text */
+    font-size: 14px;
+    /* Slightly smaller font for labels */
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    /* Rounded corners for color boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle depth for boxes */
+}
+
+/* State-specific colors for the color boxes */
+.color-box.answered {
+    background-color: #4caf53;
+    /* Green for answered */
+}
+
+.color-box.review-active {
+    background-color: rgb(232, 143, 10);
+    /* Orange for review */
+}
+
+.color-box.answered-and-reviewed {
+    background-color: #a30bea;
+    /* Reddish for answered & reviewed */
+}
+
+.color-box.active {
+    background-color: #00b894;
+    /* Reddish for answered & reviewed */
+}
