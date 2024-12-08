@@ -311,3 +311,28 @@ function goBackToHash() {
         alert("No recent target found!");
     }
 }
+
+
+
+// // Disable reloads and dev tools
+// document.addEventListener("keydown", (event) => {
+//     const forbiddenKeys = [
+//         { key: "F5" },
+//         { ctrlKey: true, key: "r" },
+//         { ctrlKey: true, shiftKey: true, key: "I" },
+//         { ctrlKey: true, key: "U" },
+//         { ctrlKey: true, shiftKey: true, key: "C" },
+//     ];
+//     if (forbiddenKeys.some((k) => Object.keys(k).every((key) => k[key] === event[key]))) {
+//         event.preventDefault();
+//         alert("This action is disabled.");
+//     }
+// });
+
+// document.addEventListener("contextmenu", (e) => e.preventDefault());
+// window.addEventListener("beforeunload", (e) => {
+//     e.preventDefault();
+//     e.returnValue = "You can't reload.";
+// });
+
+
